@@ -7,30 +7,35 @@
 /* Element Selectors */
 body {
   position: relative;
-  font-family: "Goudy Bookletter 1911", sans-serif;
-  font-size: 20px;
+  font-family: "Comic Sans MS", sans-serif;
+  font-size: 24px;
   background-color: #c4f1ff;
   color: #001e27;
 }
 
 h1,
 h2 {
-  margin: 20px;
+  margin: 15px;
 }
 
 main {
-  padding: 60px 0;
+  padding-top: 60px;
 }
 
 li {
   display: inline;
-  padding: 0px 20px;
+  padding: 0px 36px;
   text-decoration: none;
+}
+
+.head-button {
+  border: 5px solid #1e87b8;
+  background: #2098D1;
 }
 
 a {
   text-decoration: none;
-  color: #c4f1ff;
+  color: whitesmoke;
 }
 
 header,
@@ -48,8 +53,8 @@ header {
 
 footer {
   position: absolute;
-  margin-top: 0;
-  bottom: 0;
+  /* margin-top: 0;
+  bottom: 0; */
   border-bottom: 10px solid #00ffbc;
   color: #c4f1ff;    
 }
@@ -72,10 +77,28 @@ section {
   background-color:  #b1edff;
 }
 
+#about-me {
+  background-color: #c4f1ff;
+  padding: 4%;
+}
+
+#good-quote {
+  padding-left: 5%;
+  margin-left: 5%;
+  float: right;
+  box-shadow: inset 5px 0 5px -5px #29627e;
+  font-style: italic;
+  color: #29627e;
+}
+
+#good-quote > p {
+  margin: 8px;
+}
+
 form {
   /* Center the form on the page */
   margin: 0 auto;
-  width: 500px;
+  width: 600px;
   padding: 10px;
   border: 5px solid #4ed5ff;
   border-radius: 20px;
@@ -83,13 +106,13 @@ form {
 
 label {
   display: inline-block;
-  width: 100px;
+  width: 160px;
 }
   
 input, 
 textarea {
   box-sizing: border-box;
-  width: 300px;
+  width: 240px;
   border: 1px solid #006989;
 }
 
@@ -99,13 +122,14 @@ textarea {
 }
   
 button {
-  height: 40px;
-  width: 120px;
+  height: 50px;
+  width: 160px;
   background-color: #005a76;
   color: #001e27;
+  font-size: large;
+  font-weight: bolder;
 }
- 
-/* Class Selectors */
+
 .text-center {
   text-align: center;
 }
@@ -114,12 +138,12 @@ button {
   text-align: right;
 }
 
-/* Added Interactive Effeects */
+/* Interactive Effeects */
 .card {
   vertical-align: middle;
   transform: perspective(1px) translateZ(0);
-  margin-top: 4px;
-  border: 5px solid #1e87b8;
+  margin-top: 6px;
+  border: 6px solid #1e87b8;
   box-shadow: 2px 4px #7c7a94;
   position: relative;
   background: #2098D1;
