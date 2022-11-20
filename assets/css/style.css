@@ -1,3 +1,5 @@
+/* Color pallete was provided by https://www.colorhexa.com/00c3ff */
+
 /* Universal Selector */
 * {
   margin:0;
@@ -14,7 +16,7 @@ body {
 }
 
 h1,
-h2 {
+h2,h3 {
   margin: 15px;
 }
 
@@ -34,6 +36,7 @@ li {
 }
 
 a {
+  /* We don't really want these links to be underlined since they're in the header */
   text-decoration: none;
   color: whitesmoke;
 }
@@ -47,6 +50,7 @@ footer {
 }
 
 header {
+  /* We're required to make the header fixed/persist on scroll */
   position: fixed;
   border-bottom: 10px solid #0044ff;
 }
@@ -64,6 +68,7 @@ figure {
 }
 
 img {
+  /* Want different style between whole of figure and the actual image */
   display: block;
   margin: 20px auto;
   height: 400px ;
@@ -71,6 +76,7 @@ img {
 }
 
 section {
+  /* Lets give each section a cool little top border line */
   margin-bottom: 0;
   padding: 20px 10px 40px 10px;
   border-top: 3px solid #76dfff;
@@ -83,6 +89,7 @@ section {
 }
 
 #good-quote {
+  /* This is for the aside */
   padding-left: 5%;
   margin-left: 5%;
   float: right;
@@ -96,7 +103,7 @@ section {
 }
 
 form {
-  /* Center the form on the page */
+  /* This is to center the form on the page and give it a small, curved area*/
   margin: 0 auto;
   width: 600px;
   padding: 10px;
@@ -105,22 +112,17 @@ form {
 }
 
 label {
+  /* We want "name" and "email" to be next to the input fields, not above or below */
   display: inline-block;
   width: 160px;
 }
   
-input, 
-textarea {
+input {
   box-sizing: border-box;
   width: 240px;
   border: 1px solid #006989;
 }
 
-textarea {
-  vertical-align: top;
-  height: 60px;
-}
-  
 button {
   height: 50px;
   width: 160px;
@@ -136,6 +138,11 @@ button {
 
 .text-right {
   text-align: right;
+}
+
+.send-button {
+  border-top: none;
+  padding: 1%;
 }
 
 /* Interactive Effeects */
